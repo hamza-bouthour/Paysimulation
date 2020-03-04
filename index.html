@@ -6,7 +6,8 @@
     <title>Pay Estimator</title>
     <meta name="description" content="pay, salary, taxes">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="program.js">
+    <script src="program.js"></script>
+    
 </head>
 <body>
     <header> 
@@ -55,26 +56,30 @@
         <div id="estimator1">
             <table>
                 <tr>
-                <th id="hourlyPay">Hourly pay</th>
-                <th id="allowance">Allowance</th>
-                <th id="totalHours">Total hours</th>
-                <th id="bonus">Bonuses</th>
+                <th>Hourly pay</th>
+                <th>Allowance</th>
+                <th>Total hours</th>
+                <th>Bonuses</th>
                 </tr>
                 <tr>
                     <td>                         
-                        <input type="number">  
+                        <input type="number" id="hourlyPay">  
                     </td>
                     <td>
-                        <input type="number">
+                        <input id="allowance" type="number">
                     </td>
                     <td>
-                        <input type="number">
+                        <input type="number" id="totalHours" >
                     </td>
                     <td>
-                        <input type="number">
+                        <input id="bonus" type="number" placeholder="$">
                     </td>
                 </tr>
             </table>
+        </div>
+        <br>
+        <div>
+            <button id="calculate1" onclick="grossPay()">Calculate</button>
         </div>
         <div>
             <h3>Your estimated pay is:</h3>
@@ -113,10 +118,14 @@
                 <input type="number">
             </td>
             <td>
-                <input type="number">
+                <input type="number" placeholder="$">
             </td>
         </tr>
     </table>
+</div>
+<br>
+<div>
+    <button id="calculate2">Calculate</button>
 </div>
 <div>
     <h3>The estimated pay is:</h3>

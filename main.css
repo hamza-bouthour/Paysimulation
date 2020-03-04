@@ -72,6 +72,9 @@ header {
     font-size: large;
     text-decoration: none;
 }
+#navBar a:hover {
+    color: #866bff;
+}
 #estimator1 {
     
     padding: 10px;
@@ -92,4 +95,30 @@ input {
     border: none;
     height: 2px;
 
+}
+#calculate1 {
+    cursor: pointer;
+    margin-left: 22px;
+    padding: 10px;
+    background-color: #340236;
+    color: #ce0944;
+    font-size: 15px;
+    border: solid 2px #866bff;
+
+}
+#calculate2 {
+    cursor: pointer;
+    margin-left: 22px;
+    padding: 10px;
+    background-color: #340236;
+    color: #ce0944;
+    font-size: 15px;
+    border: solid 2px #866bff;
+
+}
+#calculate1:hover {
+    border: red solid 1px;
+}
+#calculate2:hover {
+    border: red solid 1px;
 }
