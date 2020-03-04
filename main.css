@@ -72,3 +72,24 @@ header {
     font-size: large;
     text-decoration: none;
 }
+#estimator1 {
+    
+    padding: 10px;
+}
+table td {
+    overflow: hidden;     
+    padding: 10px;
+    
+}
+input {
+    font-size: bold;
+    font-size: 18px;
+}
+
+#lines {
+    color: springgreen;
+    background-color: red;
+    border: none;
+    height: 2px;
+
+}
