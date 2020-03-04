@@ -54,6 +54,7 @@
         </div>
         <br><br>
         <div id="estimator1">
+    <form>
             <table>
                 <tr>
                 <th>Hourly pay</th>
@@ -69,18 +70,20 @@
                         <input id="allowance" type="number">
                     </td>
                     <td>
-                        <input type="number" id="totalHours" >
+                        <input type="number" id="totalHours">
                     </td>
                     <td>
                         <input id="bonus" type="number" placeholder="$">
                     </td>
                 </tr>
             </table>
+            
         </div>
         <br>
         <div>
-            <button id="calculate1" onclick="grossPay()">Calculate</button>
+            <button type="submit" id="calculate1" onclick="grossPay()">Calculate</button>
         </div>
+       </form>
         <div>
             <h3>Your estimated pay is:</h3>
             <p id="result1"></p>
