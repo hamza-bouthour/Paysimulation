@@ -11,12 +11,13 @@ function grossPay(hourlyPay, totalHours) {
     //var hp = document.getElementById("hourlyPay").contentEditable;
     //var th = document.getElementById("totalHours").contentEditable;
     if (totalHours <= 40) { 
-        return hourlyPay * totalHours;
-        console.log(hourlyPay * totalHours);
-       // document.getElementById("result1").innerHTML = hp * th;  
-    }
-    else 
-    return (totalHours - 40) * (hourlyPay * 1.5) + (40 * hourlyPay);
+        //return hourlyPay * totalHours;
+       // console.log(hourlyPay * totalHours);
+        var res = (totalHours * hourlyPay);
+        document.getElementById("result1").innerHTML = res;    
+    } 
+       var res = (totalHours - 40) * (hourlyPay * 1.5) + (40 * hourlyPay);
+       document.getElementById("result1").innerHTML = res;   
 }
 //console.log('asba lik');
 //document.getElementById("calculate1").addEventListener("click", grossPay());

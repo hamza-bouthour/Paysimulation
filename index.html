@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay Estimator</title>
     <meta name="description" content="pay, salary, taxes">
     <link rel="stylesheet" href="main.css">
-    <!--<script src="program.js"></script>-->
-    
+    <script src="program.js"></script>
+
 </head>
+
 <body>
-    <header> 
-       <div id="logo">
-           <img id="logoPhoto" src="logo.png" alt="logo">
-       </div>
-       <div id="headText1">
-           <h1>
-               Got hired or hiring?
-           </h1>
-           <div id="headText2">  
+    <header>
+        <div id="logo">
+            <img id="logoPhoto" src="logo.png" alt="logo">
+        </div>
+        <div id="headText1">
+            <h1>
+                Got hired or hiring?
+            </h1>
+            <div id="headText2">
                 <h1>
                     Estimate the pay now!
                 </h1>
-           </div>  
-       </div>
-       <div id="navBar">
-           <div class="navBar">
+            </div>
+        </div>
+        <div id="navBar">
+            <div>
                 <a href="index.html">Home</a>
-           </div>
-           <div class="linkNav">
+            </div>
+            <div class="linkNav">
                 <a href="index.html">Employer</a>
-           </div>
-           <div class="linkNav">
+            </div>
+            <div class="linkNav">
                 <a href="index.html">Employee</a>
-           </div>
-           <div class="LinkNav">
+            </div>
+            <div class="LinkNav">
                 <a href="index.html">Taxes</a>
-           </div>
-           <div class="linkNav">
+            </div>
+            <div class="linkNav">
                 <a href="index.html">Wages</a>
-           </div>
-           <div class="linkNav">
+            </div>
+            <div class="linkNav">
                 <a href="index.html">Contact</a>
-           </div>  
-       </div>
+            </div>
+        </div>
     </header>
     <br><br><br>
     <div>
@@ -54,17 +56,16 @@
         </div>
         <br><br>
         <div id="estimator1">
-    <form id="myForm">
             <table>
                 <tr>
-                <th>Hourly pay</th>
-                <th>Allowance</th>
-                <th>Total hours</th>
-                <th>Bonuses</th>
+                    <th>Hourly pay</th>
+                    <th>Allowance</th>
+                    <th>Total hours</th>
+                    <th>Bonuses</th>
                 </tr>
                 <tr>
-                    <td>                         
-                        <input type="number" id="hourlyPay">  
+                    <td>
+                        <input type="number" id="hourlyPay">
                     </td>
                     <td>
                         <input id="allowance" type="number">
@@ -77,13 +78,13 @@
                     </td>
                 </tr>
             </table>
-            
         </div>
         <br>
         <div>
-            <button id="calculate1">Calculate</button>
+            <input id="calculate1" type="button"
+                onclick="grossPay(document.getElementById('hourlyPay').value,document.getElementById('totalHours').value)"
+                value="Calculate">
         </div>
-       </form>
         <div>
             <h3>Your estimated pay is:</h3>
             <p id="result1"></p>
@@ -101,15 +102,15 @@
 
     <table>
         <tr>
-        <th id="hourlyPay">Hourly pay</th>
-        <th id="employees">Employees #</th>
-        <th id="allowance">Allowance</th>
-        <th id="totalHours">Total hours</th>
-        <th id="bonus">Bonuses</th>
+            <th id="hourlyPay1">Hourly pay</th>
+            <th id="employees1">Employees #</th>
+            <th id="allowance1">Allowance</th>
+            <th id="totalHours1">Total hours</th>
+            <th id="bonus1">Bonuses</th>
         </tr>
         <tr>
-            <td>                         
-                <input type="number">  
+            <td>
+                <input type="number">
             </td>
             <td>
                 <input type="number">
@@ -125,17 +126,18 @@
             </td>
         </tr>
     </table>
-</div>
-<br>
-<div>
-    <button id="calculate2">Calculate</button>
-</div>
-<div>
-    <h3>The estimated pay is:</h3>
-    <p id="result2"></p>
-</div>
+    </div>
+    <br>
+    <div>
+        <button id="calculate2">Calculate</button>
+    </div>
+    <div>
+        <h3>The estimated pay is:</h3>
+        <p id="result2"></p>
+    </div>
 
-   
-   
+
+
 </body>
+
 </html>
