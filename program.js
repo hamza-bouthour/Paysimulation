@@ -25,3 +25,6 @@ function grossPay(hourlyPay, totalHours) {
     document.getElementById("result1").innerHTML = ' $ ' + tot;
        
 }
+$(function(){
+    $("#logo").hide();
+});
