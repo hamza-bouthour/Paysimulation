@@ -59,22 +59,22 @@
             <table>
                 <tr>
                     <th>Hourly pay</th>
-                    <th>Allowance</th>
+                    <th>Estimated Taxes</th>
                     <th>Total hours</th>
                     <th>Bonuses</th>
                 </tr>
                 <tr>
                     <td>
-                        <input type="number" id="hourlyPay">
+                        <input class= inpc type="number" id="hourlyPay">
                     </td>
                     <td>
-                        <input id="allowance" type="number">
+                        <input id="allowance" type="number" placeholder="10%">
                     </td>
                     <td>
-                        <input type="number" id="totalHours">
+                        <input class= inpc type="number" id="totalHours">
                     </td>
                     <td>
-                        <input id="bonus" type="number" placeholder="$">
+                        <input class= inpc id="bonus" type="number" placeholder="$">
                     </td>
                 </tr>
             </table>
@@ -85,7 +85,7 @@
                 onclick="grossPay(document.getElementById('hourlyPay').value,document.getElementById('totalHours').value)"
                 value="Calculate">
         </div>
-        <div>
+        <div class="estimation">
             <h3>Your estimated pay is:</h3>
             <p id="result1"></p>
         </div>
@@ -104,7 +104,7 @@
         <tr>
             <th id="hourlyPay1">Hourly pay</th>
             <th id="employees1">Employees #</th>
-            <th id="allowance1">Allowance</th>
+            <th id="allowance1">Estimated taxes</th>
             <th id="totalHours1">Total hours</th>
             <th id="bonus1">Bonuses</th>
         </tr>

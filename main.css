@@ -40,16 +40,6 @@ header {
     margin-top: 5px;
     
 }
-/*#headingContainer {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 0px;
-    text-align: center;
-    background-color:#D3FFCE ;
-    border: solid white 1px;
-    height: 400px;
-    color: white;
-}*/
 
 #headingPhoto {
    width: 100%;
@@ -121,4 +111,22 @@ input {
 }
 #calculate2:hover {
     border: red solid 1px;
+}
+.estimation {
+    display: inline-block;
+}
+#result1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    text-decoration: underline;
+    display: inline-block;
+
+}
+h3 {
+    display: inline-block;
+}
+.inpc:empty {
+    background-color:whitesmoke;
+    
 }
