@@ -6,21 +6,17 @@
 // function asba() {
 //     document.getElementById("result1").innerHTML = 'ye miboun';
 // }
-// document.getElementById("calculate1").addEventListener("click", asba());
-function grossPay() {
-    console.log('ekhdem nayek');
-    var hp = document.getElementById("hourlyPay").value;
-    var th = document.getElementById("totalHours").value;
-    if (hp <= 40) { 
-        document.getElementById("result1").innerHTML = hp * th;
-        console.log(hp * th);
-        
+ //document.getElementById("calculate1").addEventListener("click", grossPay);
+function grossPay(hourlyPay, totalHours) {
+    //var hp = document.getElementById("hourlyPay").contentEditable;
+    //var th = document.getElementById("totalHours").contentEditable;
+    if (totalHours <= 40) { 
+        return hourlyPay * totalHours;
+        console.log(hourlyPay * totalHours);
+       // document.getElementById("result1").innerHTML = hp * th;  
     }
     else 
-    console.log((hp - 40) * (th * 1.5) + (40 * hp));
-    return (hp - 40) * (th * 1.5) + (40 * hp);
-    
-
+    return (totalHours - 40) * (hourlyPay * 1.5) + (40 * hourlyPay);
 }
 //console.log('asba lik');
 //document.getElementById("calculate1").addEventListener("click", grossPay());
