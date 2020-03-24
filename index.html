@@ -3,50 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Pay Estimator</title>
     <meta name="description" content="pay, salary, taxes">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Pacifico|Raleway|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <script src="program.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <img id="logoPhoto" src="logo.png" alt="logo">
+    <div class="header">
+        <div>
+            <img class="logoPhoto" src="logo.png" alt="logo">
         </div>
-        <div id="headText1">
-            <h1>
-                Got hired or hiring?
-            </h1>
-            <div id="headText2">
+
+        <div class="head-text">
+            <div class="headText1">
+                <h1>
+                    Got hired or hiring?
+                </h1>
+            </div>
+
+            <div class="headText2">
                 <h1>
                     Estimate the pay now!
                 </h1>
             </div>
         </div>
-        <div id="navBar">
-            <div>
-                <a href="index.html">Home</a>
-            </div>
-            <div class="linkNav">
-                <a href="index.html">Employer</a>
-            </div>
-            <div class="linkNav">
-                <a href="index.html">Employee</a>
-            </div>
-            <div class="LinkNav">
-                <a href="index.html">Taxes</a>
-            </div>
-            <div class="linkNav">
-                <a href="index.html">Wages</a>
-            </div>
-            <div class="linkNav">
-                <a href="index.html">Contact</a>
-            </div>
+
+        <div>
+            <form class="sign-up-form">
+                <label for="email-input">Email</label>
+                <input type="email" name="email-input">
+                <label for="password-input">Password</label>
+                <input type="password" name="password-input">
+                <div class="form-buttons">
+                    <button class="login-button">Log-in</button>
+                    <a class="create-account-button" href="asba.com">Sign-up! </a> 
+                </div>
+            </form>
         </div>
-    </header>
+    </div>
+
+    <div id="navBar">
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+        <div class="linkNav">
+            <a href="index.html">Employer</a>
+        </div>
+        <div class="linkNav">
+            <a href="index.html">Employee</a>
+        </div>
+        <div class="LinkNav">
+            <a href="index.html">Taxes</a>
+        </div>
+        <div class="linkNav">
+            <a href="index.html">Wages</a>
+        </div>
+        <div class="linkNav">
+            <a href="index.html">Contact</a>
+        </div>
+    </div>
+
     <br><br><br>
     <div>
         <div>
@@ -65,33 +87,30 @@
                 </tr>
                 <tr>
                     <td>
-                        <input class=inpc type="number" id="hourlyPay">
+                        <input class="hourly-pay" id="hourlyPay" type="number">
                     </td>
                     <td>
-                        <input id="allowance" type="number" placeholder="10%">
+                        <input class="allowance" id="a2" type="number" placeholder="10%">
                     </td>
                     <td>
-                        <input class=inpc type="number" id="totalHours">
+                        <input class="total-hours" id="totalHours" type="number" id="totalHours">
                     </td>
                     <td>
-                        <input class=inpc id="bonus" type="number" placeholder="$">
+                        <input class="bonus" id="bonus" type="number" placeholder="$">
                     </td>
                 </tr>
             </table>
         </div>
         <br>
         <div>
-            <input id="calculate1" type="button"
-                onclick="grossPay(document.getElementById('hourlyPay').value,document.getElementById('totalHours').value)"
-                value="Calculate">
+            <input class="calculate-button" type="button" value="Calculate">
         </div>
-        <div class="estimation">
-            <h3>Your estimated pay is:</h3>
-            <p id="result1"></p>
+        <div class="result1">
+
         </div>
     </div>
     <br>
-    <hr id="lines">
+    <hr class="lines">
     <br>
     <br>
     <div>
@@ -129,11 +148,10 @@
     </div>
     <br>
     <div>
-        <button id="calculate2">Calculate</button>
+        <input class="calculate-button" type="button" value="Calculate">
     </div>
-    <div>
-        <h3>The estimated pay is:</h3>
-        <p id="result2"></p>
+    <div class="result">
+
     </div>
 
 
