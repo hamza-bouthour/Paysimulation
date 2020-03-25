@@ -85,27 +85,26 @@
                 </tr>
                 <tr>
                     <td>
-                        <input class="hourly-pay" id="hourlyPay" type="number">
+                        <input id="hp1" type="number">
                     </td>
                     <td>
-                        <input class="allowance" id="a2" type="number" placeholder="10%">
+                        <input id="allowance" type="number" placeholder="10%">
                     </td>
                     <td>
-                        <input class="total-hours" id="totalHours" type="number" id="totalHours">
+                        <input id="th1" type="number">
                     </td>
                     <td>
-                        <input class="bonus" id="bonus" type="number" placeholder="$">
+                        <input id="b1" type="number" placeholder="$">
                     </td>
                 </tr>
             </table>
         </div>
         <br>
-        <div>
-            <input class="calculate-button" type="button" value="Calculate">
+        <div class="result">
+            <input class="calculate-button" type="button" value="Calculate" onclick="grossPay()">
+            <p id="asba"></p>
         </div>
-        <div class="result1">
-
-        </div>
+        
     </div>
     <br>
     <hr class="lines">
