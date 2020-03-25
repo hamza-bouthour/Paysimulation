@@ -138,10 +138,11 @@ input {
     display: inline-block;
 }
 
-#result1 {
+#asba {
+    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: green;
+    color:#670458 ;
     text-decoration: underline;
     display: inline-block;
 }
