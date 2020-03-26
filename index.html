@@ -39,8 +39,8 @@
                 <label for="password-input">Password</label>
                 <input type="password" name="password-input">
                 <div class="form-buttons">
-                    <button class="login-button">Log-in</button>
-                    <a class="create-account-button" href="asba.com">Sign-up! </a> 
+                 <button class="login-button">Log-in</button>
+                <a class="create-account-button" href="index.html">Sign-up! </a> 
                 </div>
             </form>
         </div>
@@ -56,12 +56,6 @@
         <div class="linkNav">
             <a href="index.html">Employee</a>
         </div>
-        <div class="LinkNav">
-            <a href="index.html">Taxes</a>
-        </div>
-        <div class="linkNav">
-            <a href="index.html">Wages</a>
-        </div>
         <div class="linkNav">
             <a href="index.html">Contact</a>
         </div>
@@ -75,34 +69,29 @@
             </h3>
         </div>
         <br><br>
-        <div id="estimator1">
-            <table>
-                <tr>
-                    <th>Hourly pay</th>
-                    <th>Estimated Taxes</th>
-                    <th>Total hours</th>
-                    <th>Bonuses</th>
-                </tr>
-                <tr>
-                    <td>
-                        <input id="hp1" type="number">
-                    </td>
-                    <td>
-                        <input id="allowance" type="number" placeholder="10%">
-                    </td>
-                    <td>
-                        <input id="th1" type="number">
-                    </td>
-                    <td>
-                        <input id="b1" type="number" placeholder="$">
-                    </td>
-                </tr>
-            </table>
+        <div class="employee-estimator">
+            <div class="input-box">
+                <p>Hourly pay</p>
+                <input id="hp1" type="number">
+            </div>
+            <div class="input-box">
+                <p>Taxes</p>
+                <input id="allowance" type="number" placeholder="10%">
+            </div>
+            <div class="input-box">
+                <p>Total hours</p>
+                <input id="th1" type="number">
+            </div>
+            <div class="input-box">
+                <p>Bonuses</p>
+                <input id="b1" type="number" placeholder="$">
+            </div>
+        
         </div>
         <br>
         <div class="result">
             <input class="calculate-button" type="button" value="Calculate" onclick="grossPay()">
-            <p id="asba"></p>
+            <!-- <p id="asba"></p> -->
         </div>
         
     </div>
@@ -116,39 +105,31 @@
         </h3>
     </div>
 
-    <table>
-        <tr>
-            <th id="hourlyPay1">Hourly pay</th>
-            <th id="employees1">Employees #</th>
-            <th id="allowance1">Estimated taxes</th>
-            <th id="totalHours1">Total hours</th>
-            <th id="bonus1">Bonuses</th>
-        </tr>
-        <tr>
-            <td>
-                <input type="number">
-            </td>
-            <td>
-                <input type="number">
-            </td>
-            <td>
-                <input type="number">
-            </td>
-            <td>
-                <input type="number">
-            </td>
-            <td>
-                <input type="number" placeholder="$">
-            </td>
-        </tr>
-    </table>
+    <div class="employee-estimator">
+        <div class="input-box">
+            <p>Hourly pay</p>
+            <input id="hp1" type="number">
+        </div>
+        <div class="input-box">
+            <p>Taxes</p>
+            <input id="allowance" type="number" placeholder="10%">
+        </div>
+        <div class="input-box">
+            <p>Total hours</p>
+            <input id="th1" type="number">
+        </div>
+        <div class="input-box">
+            <p>Bonuses</p>
+            <input id="b1" type="number" placeholder="$">
+        </div>
+    
     </div>
+    
+    
     <br>
-    <div>
-        <input class="calculate-button" type="button" value="Calculate">
-    </div>
     <div class="result">
-
+        <input class="calculate-button" type="button" value="Calculate" onclick="grossPay()">
+        <!-- <p id="asba"></p> -->
     </div>
 
 
