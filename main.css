@@ -35,6 +35,7 @@ body {
 }
 
 .sign-up-form {
+    
     border-radius: 5px;
     margin-right: 20px;
     padding: 8px;
@@ -107,10 +108,7 @@ div.form-buttons a {
     color: #866bff;
 }
 
-table td {
-    overflow: hidden;     
-    padding: 10px;  
-}
+
 
 input {
     border-radius: 5px;
@@ -126,16 +124,66 @@ input {
     border: none;
     height: 2px;
 }
+.employee-estimator {
+    display: flex;
+    justify-content: space-around;
+}
+.input-box {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+     padding: 26px;
+  color: #670458;
+  border-radius: 5px;
+  border-style: solid;
+  border-color:#770085 ;
+  font-size: bold;
+  border-width: 2px;
+  
+}
+div.input-box input {
+      width: 160px;
+      border-color:#866bff ;
+      border-style: solid;
+      border-radius: 5px;
+      
+}
+.result {
+    display: flex;
+    justify-content: center;
+}
 
 .calculate-button {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 22px;
-    padding: 10px;
+    /* margin-left: 22px; */
+    padding: 14px;
     color: #4a50f7;
-    font-size: 10px;
+    font-size: 20px;
     border: solid 2px #866bff;
+}
+.show-result-employee {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #670458;
+    /* border: #4a50f7 2px solid; */
+    margin: auto;
+}
+.restart {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: #4a50f7 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    color:#670458 ;
+    margin-left: 20px;
+    margin-top: 17px;
+    font-size: 18px;
+    width: 80px;
+    height: 50px;
 }
 
 .calculate-button:hover {
@@ -146,14 +194,6 @@ input {
     display: inline-block;
 }
 
-#asba {
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color:#670458 ;
-    text-decoration: underline;
-    display: inline-block;
-}
 
 h3 {
     display: inline-block;
@@ -166,7 +206,12 @@ h3 {
 .hidden {
     display: none;
 }
-
+div.log-in-link {
+    display: none;
+}
+div.sign-up-link {
+    display: none;
+}
 }
 @media only screen and (max-width: 720px) {
     * {
@@ -186,7 +231,7 @@ h3 {
     .header {
         margin-top: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;   
     }
     
@@ -197,9 +242,9 @@ h3 {
     }
     
     .logoPhoto {
-        margin-left: 20px;
-        height: 100%;
-        width: 100%;
+        margin-top: 40px;
+        width: 150px;
+        
     }
     
     .headText2 {
@@ -237,8 +282,8 @@ h3 {
         border: 2px solid #2799ce ;
         border-radius: 5px;
         color:#2799ce ;
-        font-weight: 600;
-        margin-bottom: 5px;   
+        font-size: 12px;
+        /* margin-bottom: 5px;    */
     }
     
     button:hover {
@@ -259,25 +304,23 @@ h3 {
     }
     
     #navBar {
-        /* width: 700px; */
-        width: 80%;
-        margin-left: 50px;
+        
+        width: 100%;
         position: fixed;
-        top: 2px;
+        top: 1px;
+        left: 0px;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
         padding: 7px;
-        /* margin-top: 30px; */
-        border-bottom: solid #4a50f7 2px;
+        /* border-bottom: solid #4a50f7 1px; */
+        /* background-color: #a18d97; */
+          font-weight: bold;
+        font-size: 12px;
+          
     }
     
-    #navBar a {
-        color: #670458;
-        font-weight: bold;
-        font-size: 12px;
-        text-decoration: none;
-    }
+    
     
     #navBar a:hover {
         color: #866bff;
@@ -307,7 +350,7 @@ h3 {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: bold;
         cursor: pointer;
-        margin-left: 22px;
+        /* margin-left: 22px; */
         padding: 5px;
         color: #4a50f7;
         font-size: 10px;
@@ -319,19 +362,9 @@ h3 {
         border: solid 3px #866bff;
     }
     
-    /* .estimation {
-        display: inline-block;
-    } */
-    
-    /* #asba {
-        margin-left: 20px;
-        font-size: 20px;
-        font-weight: bold;
-        color:#670458 ;
-        text-decoration: underline;
-        
-    } */
-    
+    form.sign-up-form {
+        display: none;
+    }
     h3 {
         display: inline-block;
     }
@@ -348,16 +381,65 @@ h3 {
         display: flex;
         justify-content: space-around;
     }
-.input-box {
-    text-align: center;
-    padding: 2px;
-    border: 2px solid red;
-}
-div.input-box input {
-    width: 80px;
-}
-.result {
-    display: flex;
-    justify-content: center;
-}
+    .input-box {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+         padding: 2px;
+      color: #670458;
+      border-radius: 5px;
+      border-style: solid;
+      border-color:#770085 ;
+      font-size: bold;
+      border-width: 2px;
+      
+    }
+    div.input-box input {
+          width: 80px;
+          border-color:#866bff ;
+          border-style: solid;
+          border-radius: 5px;
+          
+    }
+    .result {
+        display: flex;
+        justify-content: center;
+    }
+    div.log-in-link {
+        border: 2px solid #2799ce ;
+        border-radius: 5px;
+        font-size: 12px; 
+    }
+    a.super-link {
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .linkNav a {
+        color: #670458;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+
+    }
+    .show-result-employee {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #670458;
+        /* border: #4a50f7 2px solid; */
+        margin: auto;
+    }
+    .restart {
+        padding: 2px;
+        border: #4a50f7 2px solid;
+        border-radius: 5px;
+        font-weight: bold;
+        color:#670458 ;
+        margin-left: 20px;
+        margin-top: 17px;
+        font-size: 10px;
+        width: 50px;
+        height: 24px;
+    }
+    
 }
