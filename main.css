@@ -382,11 +382,12 @@ div.sign-up-link {
         justify-content: space-around;
     }
     .input-box {
-        width: 100px;
+        font-size: 15px;
+        width: 90px;
         height: 90px;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-         padding: 2px;
+         /* padding: 2px; */
       color: #670458;
       border-radius: 5px;
       border-style: solid;
