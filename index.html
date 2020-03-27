@@ -7,8 +7,9 @@
     <title>Pay Estimator</title>
     <meta name="description" content="pay, salary, taxes">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Pacifico|Raleway|Source+Sans+Pro&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Montserrat|Pacifico|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </head>
 
@@ -47,7 +48,7 @@
     </div>
 
     <div id="navBar">
-        <div>
+        <div class="linkNav">
             <a href="index.html">Home</a>
         </div>
         <div class="linkNav">
@@ -59,6 +60,13 @@
         <div class="linkNav">
             <a href="index.html">Contact</a>
         </div>
+        <div class="linkNav sign-up-link">
+            <a class="create-account-button" href="index.html">Sign-up! </a> 
+        </div>
+        <div class="log-in-link">
+            <a class="super-link" href="index.html">Log-in</a>
+        </div>
+        
     </div>
 
     <br><br><br>
@@ -72,7 +80,7 @@
         <div class="employee-estimator">
             <div class="input-box">
                 <p>Hourly pay</p>
-                <input id="hp1" type="number">
+                <input id="hp1" type="number" onfocus="this.value=''">
             </div>
             <div class="input-box">
                 <p>Taxes</p>
@@ -80,18 +88,23 @@
             </div>
             <div class="input-box">
                 <p>Total hours</p>
-                <input id="th1" type="number">
+                <input id="th1" type="number" onfocus="this.value=''">
             </div>
             <div class="input-box">
-                <p>Bonuses</p>
-                <input id="b1" type="number" placeholder="$">
+                <p>Bonus</p>
+                <input id="b1" type="number" placeholder="$" onfocus="this.value=''">
             </div>
         
         </div>
         <br>
         <div class="result">
             <input class="calculate-button" type="button" value="Calculate" onclick="grossPay()">
-            <!-- <p id="asba"></p> -->
+    
+        </div>
+        <div id="result-window" class="hidden">
+            <p id="amount"></p>
+            <button class="restart">Restart</button>
+            
         </div>
         
     </div>
@@ -119,7 +132,7 @@
             <input id="th1" type="number">
         </div>
         <div class="input-box">
-            <p>Bonuses</p>
+            <p>Bonus</p>
             <input id="b1" type="number" placeholder="$">
         </div>
     
@@ -128,10 +141,15 @@
     
     <br>
     <div class="result">
-        <input class="calculate-button" type="button" value="Calculate" onclick="grossPay()">
-        <!-- <p id="asba"></p> -->
-    </div>
+        <input class="calculate-button" type="button" value="Calculate">
 
+    </div>
+    <div class="show-result-employer hidden">
+        <p id="amount-employer"></p>
+        <button class="restart">Restart</button>
+        
+    </div>
+    
 
 
 </body>
