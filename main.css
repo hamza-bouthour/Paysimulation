@@ -223,8 +223,6 @@ div.sign-up-link {
         background-image: url(https://i.postimg.cc/RhKhVqzG/cool-background.png);
         background-repeat: no-repeat;
         background-size: cover;
-        font-family: 'Source Sans Pro', sans-serif;
-      
         text-decoration: none;
     }
     
@@ -313,9 +311,8 @@ div.sign-up-link {
         justify-content: space-evenly;
         flex-direction: row;
         padding: 7px;
-        /* border-bottom: solid #4a50f7 1px; */
-        /* background-color: #a18d97; */
-          font-weight: bold;
+        padding-top: 0px;
+        font-weight: bold;
         font-size: 12px;
           
     }
@@ -325,28 +322,24 @@ div.sign-up-link {
     #navBar a:hover {
         color: #866bff;
     }
-    
-    table td {
-        overflow: hidden;     
-        padding: 10px;  
-    }
-    
-    form.sign-up-form input {
+      
+    /* form.sign-up-form input {
         border-radius: 5px;
         border-style: solid;
         border-color:#2799ce ;
         font-size: bold;
         font-size: 18px;
-    }
+    } */
     
     .lines {
-        width: 40%;
+        width: 80%;
         background-color: #4a50f7;
         border: none;
-        height: 2px;
+        height: px;
     }
     
     .calculate-button {
+        text-decoration: none;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: bold;
         cursor: pointer;
@@ -354,12 +347,13 @@ div.sign-up-link {
         padding: 5px;
         color: #4a50f7;
         font-size: 10px;
-        border: solid 2px #866bff;
-        border-radius: 5px;
+        /* border: solid 2px #866bff; */
+        border-style: solid;
+        border-radius: 3px;
     }
     
     .calculate-button:hover {
-        border: solid 3px #866bff;
+        border: solid 2px #866bff;
     }
     
     form.sign-up-form {
@@ -387,18 +381,18 @@ div.sign-up-link {
         height: 90px;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-         /* padding: 2px; */
-      color: #670458;
-      border-radius: 5px;
-      border-style: solid;
-      border-color:#770085 ;
-      font-size: bold;
-      border-width: 2px;
-      
+        color: #4a50f7;
+        border-radius: 5px;
+        border-style: solid;
+        border-color:#4a50f7 ;
+        font-size: bold;
+        border-width: 2px;     
     }
     div.input-box input {
+        
+          padding-left: 3px;
           width: 80px;
-          border-color:#866bff ;
+          border-color: white ;
           border-style: solid;
           border-radius: 5px;
           
@@ -407,18 +401,14 @@ div.sign-up-link {
         display: flex;
         justify-content: center;
     }
-    div.log-in-link {
-        border: 2px solid #2799ce ;
-        border-radius: 5px;
-        font-size: 12px; 
-    }
+    
     a.super-link {
         color: white;
         padding: 5px;
         text-decoration: none;
     }
     .linkNav a {
-        color: #670458;
+        color: #5d1363;
         font-weight: bold;
         font-size: 12px;
         text-decoration: none;
@@ -429,7 +419,6 @@ div.sign-up-link {
         justify-content: center;
         text-align: center;
         color: #670458;
-        /* border: #4a50f7 2px solid; */
         margin: auto;
     }
     .restart {
