@@ -382,6 +382,8 @@ div.sign-up-link {
         justify-content: space-around;
     }
     .input-box {
+        width: 120px;
+        height: 90px;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
          padding: 2px;
