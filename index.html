@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Pay Estimator</title>
     <meta name="description" content="pay, salary, taxes">
-    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Pacifico|Raleway|Source+Sans+Pro&display=swap"rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Montserrat|Pacifico|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Pacifico|Raleway|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Montserrat|Pacifico|Raleway|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
@@ -40,8 +43,8 @@
                 <label for="password-input">Password</label>
                 <input type="password" name="password-input">
                 <div class="form-buttons">
-                 <button class="login-button">Log-in</button>
-                <a class="create-account-button" href="index.html">Sign-up! </a> 
+                    <button class="login-button">Log-in</button>
+                    <a class="create-account-button" href="index.html">Sign-up! </a>
                 </div>
             </form>
         </div>
@@ -61,12 +64,12 @@
             <a href="index.html">Contact</a>
         </div>
         <div class="linkNav sign-up-link">
-            <a class="create-account-button" href="index.html">Sign-up! </a> 
+            <a class="create-account-button" href="index.html">Sign-up! </a>
         </div>
-        <div class="log-in-link">
+        <div class="linkNav log-in-link">
             <a class="super-link" href="index.html">Log-in</a>
         </div>
-        
+
     </div>
 
     <br><br><br>
@@ -80,7 +83,7 @@
         <div class="employee-estimator">
             <div class="input-box">
                 <p>Hourly pay</p>
-                <input id="hp1" type="number" onfocus="this.value=''">
+                <input id="hourly-pay-employee" type="number" onfocus="this.value=''">
             </div>
             <div class="input-box">
                 <p>Taxes</p>
@@ -88,28 +91,27 @@
             </div>
             <div class="input-box">
                 <p>Total hours</p>
-                <input id="th1" type="number" onfocus="this.value=''">
+                <input id="total-hours-employee" type="number" onfocus="this.value=''">
             </div>
             <div class="input-box">
                 <p>Bonus</p>
-                <input id="b1" type="number" placeholder="$" onfocus="this.value=''">
+                <input id="bonus-employee" type="number" placeholder="$" onfocus="this.value=''">
             </div>
-        
+
         </div>
         <br>
         <div class="result">
-            <input class="calculate-button" type="button" value="Calculate" onclick="grossPay()">
-    
+            <input class="calculate-button" type="button" value="Calculate" onclick="grossPayEmployee()">
+
         </div>
         <div id="result-window" class="hidden">
             <p id="amount"></p>
             <button class="restart">Restart</button>
-            
+
         </div>
-        
+
     </div>
     <br>
-    <hr class="lines">
     <br>
     <br>
     <div>
@@ -117,39 +119,39 @@
             &#x2659; Employee pay Estimator (California):
         </h3>
     </div>
-<br><br>
-    <div class="employee-estimator">
+    <br><br>
+    <div class="employer-estimator">
         <div class="input-box">
             <p>Hourly pay</p>
-            <input id="hp1" type="number">
+            <input id="hourly-pay-employer" type="number" onfocus="this.value=''">
         </div>
         <div class="input-box">
-            <p>Taxes</p>
-            <input id="allowance" type="number" placeholder="10%">
+            <p>Employees</p>
+            <input id="employees-number" type="number" onfocus="this.value=''">
         </div>
         <div class="input-box">
             <p>Total hours</p>
-            <input id="th1" type="number">
+            <input id="total-hours-employer" type="number" onfocus="this.value=''">
         </div>
         <div class="input-box">
             <p>Bonus</p>
-            <input id="b1" type="number" placeholder="$">
+            <input id="bonus-employer" type="number" placeholder="$" onfocus="this.value=''">
         </div>
-    
-    </div>
-    
-    
-    <br>
-    <div class="result">
-        <input class="calculate-button" type="button" value="Calculate">
 
     </div>
-    <div class="show-result-employer hidden">
+
+
+    <br>
+    <div class="result-employer">
+        <input class="calculate-button" type="button" value="Calculate" onclick="grossPayEmployer()">
+
+    </div>
+    <div id="show-result-employer" class="hidden">
         <p id="amount-employer"></p>
         <button class="restart">Restart</button>
-        
+
     </div>
-    
+
 
 
 </body>
